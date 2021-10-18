@@ -4,5 +4,5 @@ def isLeap(year):
     else:
         return False
     
-year = int(input("Dawaj jakąś liczbę"))
+year = int(input("Dawaj jakiś rok"))
 print(isLeap(year))
