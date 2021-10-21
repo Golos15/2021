@@ -1,4 +1,0 @@
-# AGO
-ćwiczenia
-
-Rozmaitość.
