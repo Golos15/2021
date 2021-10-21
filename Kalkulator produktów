@@ -5,7 +5,7 @@ def sprawdz():
     while wiecejProduktow:
         cena = float(input('Wpisz cenę produktu (0 kiedy skończysz): '))
         if cena < 0:
-            print("Nie ma negatywnych cen")
+            print("Nie ma negatywnych cen!")
             break
         elif cena != 0:
             licznik = licznik + 1
