@@ -1,4 +1,4 @@
-def checkout():
+def sprawdz():
     calosc = 0
     licznik = 0
     wiecejProduktow = True
@@ -18,4 +18,4 @@ def checkout():
     print('Suma: PLN', calosc)
     print('Średnia cena produktu: PLN', srednia)
 
-checkout()
+sprawdz()
