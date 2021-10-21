@@ -1,17 +1,17 @@
-def getGrade(grade):
-    if grade >= 90:
-        return "A"
+def dajOcene(ocena):
+    if ocena >= 90:
+        return "5"
     else:
-        if grade <90 and grade >= 80:
-            return "B"
+        if ocena <90 and ocena >= 80:
+            return "4"
         else:
-            if grade <80 and grade >= 70:
-                return "C"
+            if ocena <80 and ocena >= 70:
+                return "3"
             else:
-                if grade <70 and grade >= 60:
-                    return "D"
+                if ocena <70 and ocena >= 60:
+                    return "2"
                 else:
-                    return "F"
+                    return "1"
         
-grade = 79.9999
-print("Uczeń otrzymał", getGrade(grade))
+ocena = 79.9999
+print("Uczeń otrzymał", dajOcene(ocena))
