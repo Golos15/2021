@@ -5,7 +5,7 @@ def checkout():
     while moreItems:
         price = float(input('Wpisz cenę produktu (0 kiedy skończysz): '))
         if price < 0:
-            print("Nie ma negatywnych cen")
+            print("Nie ma negatywnych cen!")
             break
         elif price != 0:
             count = count + 1
