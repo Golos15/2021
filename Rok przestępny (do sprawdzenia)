@@ -1,8 +1,8 @@
-def isLeap(year):
-    if year % 4 == 0 or year % 100 == 0 and year // 400 == 0:
+def czyPrzestepny(rok):
+    if rok % 4 == 0 or rok % 100 == 0 and rok // 400 == 0:
         return True
     else:
         return False
     
-year = int(input("Dawaj jakąś liczbę"))
-print(isLeap(year))
+rok = int(input("Dawaj jakąś liczbę"))
+print(czyPrzestepny(rok))
