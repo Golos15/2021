@@ -1,0 +1,21 @@
+def checkout():
+    total = 0
+    count = 0
+    moreItems = True
+    while moreItems:
+        price = float(input('Wpisz cenę produktu (0 kiedy skończysz): '))
+        if price < 0:
+            print("Nie ma negatywnych cen")
+            break
+        elif price != 0:
+            count = count + 1
+            total = total + price
+            print('Suma: PLN', total)          
+        else:
+            moreItems = False
+    average = total / count
+    print('Wszystkie produkty:', count)
+    print('Suma: PLN', total)
+    print('Średnia cena produktu: PLN', average)
+
+checkout()
