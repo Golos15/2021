@@ -2,29 +2,29 @@ def dajOcene(ocena):
     a = ocena >= 90
     b = ocena <= 100
     if a and b:
-        return "5"
+        return "Uczeń dostał 5."
     else:
         c = ocena < 90
         d = ocena >= 80
         if c and d:
-            return "4"
+            return "Uczeń dostał 4."
         else:
             e = ocena < 80
             f = ocena >= 70
             if e and f:
-                return "3"
+                return "Uczeń dostał 3."
             else:
                 g = ocena < 70
                 h = ocena >= 60
                 if g and h:
-                    return "2"
+                    return "Uczeń dostał 2."
                 else:
                     j = ocena < 60
                     k = ocena >= 0
                     if j and k:
-                        return "1"
+                        return "Uczeń dostał 1."
                     else:
                         return "Nie kłam!"    
         
 ocena = int(input("Ile punktów dostał uczeń?"))
-print("Uczeń otrzymał", dajOcene(ocena))
+print(dajOcene(ocena))
