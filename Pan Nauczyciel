@@ -26,5 +26,5 @@ def dajOcene(ocena):
                     else:
                         return "Nie kłam!"    
         
-ocena = int(input("Ile punktów dostał uczeń?"))
+ocena = float(input("Ile punktów dostał uczeń?"))
 print(dajOcene(ocena))
