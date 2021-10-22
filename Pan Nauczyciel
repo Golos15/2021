@@ -2,16 +2,22 @@ def dajOcene(ocena):
     if ocena >= 90:
         return "5"
     else:
-        if ocena <90 and ocena >= 80:
+        a = ocena < 90
+        b = ocena >= 80
+        if a and b:
             return "4"
         else:
-            if ocena <80 and ocena >= 70:
+            c = ocena < 80
+            d = ocena >= 70
+            if c and d:
                 return "3"
             else:
-                if ocena <70 and ocena >= 60:
+                e = ocena <70
+                f = ocena >= 60
+                if e and f:
                     return "2"
                 else:
                     return "1"
         
-ocena = 79.9999
+ocena = 60
 print("Uczeń otrzymał", dajOcene(ocena))
