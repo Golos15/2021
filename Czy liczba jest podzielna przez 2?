@@ -5,4 +5,6 @@ def czyjest_równe(n):
         return False
     
 n = 4
-print(czyjest_równe(n))
+
+if czyjest_równe(n) == True:
+    print("Doskonale!")
