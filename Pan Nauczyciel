@@ -12,7 +12,7 @@ def dajOcene(ocena):
             if c and d:
                 return "3"
             else:
-                e = ocena <70
+                e = ocena < 70
                 f = ocena >= 60
                 if e and f:
                     return "2"
