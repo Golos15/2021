@@ -1,4 +1,4 @@
-def czyjest_równe(n):
+def czyjest_podzielna(n):
     if n % 2 == 0:
         return True
     else:
@@ -6,5 +6,5 @@ def czyjest_równe(n):
     
 n = 4
 
-if czyjest_równe(n) == True:
-    print("Doskonale!")
+if czyjest_podzielna(n) == True:
+    print("Podana liczba jest podzielna.")
