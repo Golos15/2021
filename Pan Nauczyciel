@@ -1,5 +1,7 @@
 def dajOcene(ocena):
-    if ocena >= 90:
+    g = ocena >= 90
+    h = ocena <= 100
+    if g and h:
         return "5"
     else:
         a = ocena < 90
@@ -17,7 +19,12 @@ def dajOcene(ocena):
                 if e and f:
                     return "2"
                 else:
-                    return "1"
+                    j = ocena < 60
+                    k = ocena >= 0
+                    if j and k:
+                        return "1"
+                    else:
+                        return "Nie kłam!"    
         
-ocena = 60
+ocena = int(input("Ile punktów dostał uczeń?"))
 print("Uczeń otrzymał", dajOcene(ocena))
