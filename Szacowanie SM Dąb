@@ -1,0 +1,8 @@
+def licznik():
+    współczynnikOceny = int(input("Podaj współczynnik oceny:")) 
+    odczyt = int(input("Podaj odczyt z grzejnika:")) 
+    c = (odczyt * współczynnikOceny)/100
+    zaokrąglonaSuma = round(c, 0)
+    print(zaokrąglonaSuma)
+    
+licznik()
