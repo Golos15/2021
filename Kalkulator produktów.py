@@ -3,12 +3,12 @@ def sprawdz():
     licznik = 0
     wiecejProduktow = True
     while wiecejProduktow:
-        cena = input('Wpisz cenę produktu (Wpisz "koniec" kiedy skończysz): ')
+        cenaTekst = input('Wpisz cenę produktu (Wpisz "koniec" kiedy skończysz): ')
         try:
-            cenaLiczba = float(cena)
+            cenaLiczba = float(cenaTekst)
         except ValueError:
-            if cena
-            print("To nie jest float!", cena)
+            if cenaTekst != "koniec":
+                continue
             break
         if cenaLiczba < 0:
             print("Nie ma ujemnych cen!")
