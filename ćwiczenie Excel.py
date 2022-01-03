@@ -1,8 +1,8 @@
-from wynik_liczenia import wynik_liczenia
-from zwracacz import aproksymujLicznik
+from openpyxl import load_workbook
 
-parametry_wejsciowe = [wynik_liczenia(0, 1, 2), wynik_liczenia(3, 4, 5)]
-wyniki = aproksymujLicznik(parametry_wejsciowe)
-for wynik in wyniki:
-    print (wynik.odczyt, wynik.wspolczynnik, wynik.numer_podz)
+wb = load_workbook('E:\\ĆWICZENIE.XLSX')
+ws = wb['Arkusz1']
 
+for wiersz in ws.rows:
+    for komorka in wiersz:
+        print(komorka.value)
