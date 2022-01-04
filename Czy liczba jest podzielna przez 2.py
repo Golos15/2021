@@ -4,7 +4,9 @@ def czyjest_podzielna(n):
     else:
         return False
     
-n = 4
+n = 5
 
 if czyjest_podzielna(n) == True:
     print("Podana liczba jest podzielna.")
+else:
+    print("Podana liczba jest niepodzielna")
