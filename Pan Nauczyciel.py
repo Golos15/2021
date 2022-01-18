@@ -1,30 +1,23 @@
 def dajOcene(ocena):
-    a = ocena >= 90
-    b = ocena <= 100
-    if a and b:
+    try:
+        ocena = int(ocena)
+    except:
+        return "Wpisz liczbę!"
+    if ocena >= 101:
+        return "Za wysoko!"
+    elif ocena > 90:
         return "Uczeń dostał 5."
+    elif ocena >= 80:
+        return "Uczeń dostał 4."
+    elif ocena >= 70:
+        return "Uczeń dostał 3."
+    elif ocena >= 50:
+        return "Uczeń dostał 2."
+    elif ocena >= 0:
+        return "Uczeń dostał 1."
     else:
-        c = ocena < 90
-        d = ocena >= 80
-        if c and d:
-            return "Uczeń dostał 4."
-        else:
-            e = ocena < 80
-            f = ocena >= 70
-            if e and f:
-                return "Uczeń dostał 3."
-            else:
-                g = ocena < 70
-                h = ocena >= 60
-                if g and h:
-                    return "Uczeń dostał 2."
-                else:
-                    j = ocena < 60
-                    k = ocena >= 0
-                    if j and k:
-                        return "Uczeń dostał 1."
-                    else:
-                        return "Nie kłam!"    
-        
-ocena = float(input("Ile punktów dostał uczeń?"))
+        return "Nie kłam!"
+
+
+ocena = input("Ile punktów dostał uczeń?")
 print(dajOcene(ocena))
