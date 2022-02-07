@@ -24,10 +24,6 @@ while True:
 
     while player not in choices:
         player = input("kamień, papier, czy nożyce?: ").lower()
-    if player == computer:
-        print("komputer: ",computer)
-        print("gracz: ",player)
-        print("Remis!")
 
     print(wez_wynik(player, computer))
     jeszcze_raz = input("Chcesz zagrać jeszcze raz? (tak/nie): ").lower()
