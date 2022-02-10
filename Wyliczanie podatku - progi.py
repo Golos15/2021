@@ -9,5 +9,6 @@ def tax (income):
             income -= sumToTaxFrom
     return int(total)
 
-print(tax(income=27500))
+income = float(input("Wpisz kwotę do opodatkowania: "))
+print(tax(income))
 
