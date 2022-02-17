@@ -19,7 +19,11 @@ def sprawdz():
             print('Suma: PLN', calosc)          
         else:
             wiecejProduktow = False
-    srednia = calosc / licznik
+    srednia = 0
+    try:
+        srednia = calosc / licznik
+    except ZeroDivisionError:
+        print("Nie dziel przez zero!")
     print('Wszystkie produkty:', licznik)
     print('Suma: PLN', calosc)
     print('Średnia cena produktu: PLN', srednia)
