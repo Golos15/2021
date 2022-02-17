@@ -13,17 +13,14 @@ def sprawdz():
         if cenaLiczba < 0:
             print("Nie ma ujemnych cen!")
             continue
-        elif cenaLiczba != 0:
+        elif cenaLiczba != 0 or cenaLiczba == 0:
             licznik = licznik + 1
             calosc = calosc + cenaLiczba
-            print('Suma: PLN', calosc)          
+            print('Suma: PLN', calosc)
         else:
             wiecejProduktow = False
-    srednia = 0
-    try:
-        srednia = calosc / licznik
-    except ZeroDivisionError:
-        print("Nie dziel przez zero!")
+
+    srednia = calosc / licznik
     print('Wszystkie produkty:', licznik)
     print('Suma: PLN', calosc)
     print('Średnia cena produktu: PLN', srednia)
