@@ -12,7 +12,7 @@ while True:
         print("To nie jest liczba!")
 
 
-if czyjest_podzielna(n) != True:
+if czyjest_podzielna(n) == True:
     print("Podana liczba jest podzielna.")
 else:
     print("Podana liczba jest niepodzielna.")
