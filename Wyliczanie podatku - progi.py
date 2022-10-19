@@ -10,5 +10,4 @@ def tax (income):
     return int(total)
 
 income = float(input("Wpisz kwotę do opodatkowania: "))
-print(tax(income))
-
+print("Twój podatek wynosi: " + str((tax(income))))
