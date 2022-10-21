@@ -18,7 +18,5 @@ def dajOcene(ocena):
     except:
         return "Wpisz liczbę!"
         
-
-
-ocena = input("Ile punktów dostał uczeń?")
+ocena = input("Ile punktów dostał uczeń? ")
 print(dajOcene(ocena))
