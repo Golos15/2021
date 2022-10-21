@@ -1,9 +1,6 @@
 def dajOcene(ocena):
     try:
         ocena = int(ocena)
-    except:
-        return "Wpisz liczbę!"
-    finally:
         if ocena >= 101:
             return "Za wysoko!"
         elif ocena > 80:
@@ -18,6 +15,9 @@ def dajOcene(ocena):
             return "Uczeń dostał 1."
         else:
             return "Nie kłam!"
+    except:
+        return "Wpisz liczbę!"
+        
 
 
 ocena = input("Ile punktów dostał uczeń?")
