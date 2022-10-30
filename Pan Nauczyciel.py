@@ -18,5 +18,8 @@ def dajOcene(ocena):
     except:
         return "Wpisz liczbę!"
         
-ocena = input("Ile punktów dostał uczeń? ")
-print(dajOcene(ocena))
+while True:
+    ocena = input("Ile punktów dostał uczeń? ")
+    if ocena.lower() == "koniec":
+        break
+    print(dajOcene(ocena))
