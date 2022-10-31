@@ -14,11 +14,10 @@ def wez_wynik(player, computer):
     else:
         return "Przegrałeś!"
 
+zakonczyc_program = False
 
-
-while True:
+while not zakonczyc_program:
     choices = ["kamień","papier","nożyce"]
-
     computer = random.choice(choices)
     player = None
 
@@ -26,10 +25,14 @@ while True:
         player = input("kamień, papier, czy nożyce?: ").lower()
 
     print(wez_wynik(player, computer))
-    jeszcze_raz = input("Chcesz zagrać jeszcze raz? (tak/nie): ").lower()
 
-    if jeszcze_raz != "tak":
-        break
+    while True:
+        jeszcze_raz = input("Chcesz zagrać jeszcze raz? (tak/nie): ").lower()
+        if jeszcze_raz == "nie":
+            zakonczyc_program = True
+            break
+        elif jeszcze_raz == "tak":
+            break
 
 print("Na razie!")
 
