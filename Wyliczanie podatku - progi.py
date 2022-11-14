@@ -7,8 +7,8 @@ def tax (income):
             sumToTaxFrom = income - value
             total += (sumToTaxFrom * taxPercent)
             income -= sumToTaxFrom
+            break
     return int(total)
 
 income = float(input("Wpisz kwotę do opodatkowania: "))
-print(tax(income))
-
+print("Twój podatek wynosi: " + str((tax(income))))
