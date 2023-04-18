@@ -15,4 +15,4 @@ while True:
 if czyjest_podzielna(n) == True:
     print("Podana liczba jest podzielna.")
 else:
-    print("Podana liczba jest niepodzielna!!")
+    print("Podana liczba jest niepodzielna!!!")
