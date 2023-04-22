@@ -7,7 +7,7 @@ def algorytm_Luhna(nr_nieruch):
     #suma_parzystej = 0
 
     for i, wartosc in enumerate(reversed(cyfry)):
-        if i % 2 = 0:
+        if i % 2 == 0:
             wartosc *= 2
             if len(str(wartosc)) > 1:
                 for cyfra in str(wartosc):
